@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;500;700&family=Skranji&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: #cdd2c0;
+    text-decoration: none;
+}
+body {
+    background-image: url(../img/fondo2.jpg);
+    font-family: 'Raleway', sans-serif;
+}
+/* Inicio Header */
+header {
+    background-color: #495f41;
+    font-family: 'Skranji', cursive;
+    text-align: center;
+    padding-top: 10px;
+    padding-inline: 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+.logo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+}
+.name-pag {
+    color: #cdd2c0;
+    font-size: 2.5rem;
+    padding-left: 0px;
+    text-align: left;
+}
+.menu {
+    display: inline;
+    text-decoration: none;
+    color: #cdd2c0;
+    font-size: 1.5rem;
+    background-color: #495f41;
+}
+.navbar {
+    background-color: #495f41;
+    align-items: center;
+    --bs-navbar-color: #cdd2c0;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar-toggler {
+    background-color:#cdd2c0;
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+}
+main {
+    margin-inline: 10rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #cdd2c0;
+}
+/* Fin Header */
+
+/* Inicio Index */
+.noticia {
+    display: flex;
+    flex-direction: column;
+    color: #091540;
+    background-color: #cdd2c0;
+    padding: 2rem 5rem;
+}
+.titulo {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.subtitulo{
+    font-size: 1.8rem;
+    margin-block: 1rem;
+}
+.img-noticia {
+    max-width: 900px;
+    margin-bottom: 2rem;
+    margin-inline: 9rem;
+}
+.cuerpo-noticia {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.mas-noticias {
+    display: flex;
+    background-color: #cdd2c0;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    margin-inline: auto;
+    gap: 2rem;
+    flex-direction: column;
+}
+.noticias-extra {
+    display: flex;
+    gap: 2rem;
+}
+.otra-noticia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 5px solid #495f41;
+    border-radius: 10%;
+    padding: 0.8rem;
+}
+.img-otra-noticia {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: scale-down;
+    margin-block: -4rem;
+}
+.otro-titulo {
+    font-size: 1.5rem;
+}
+/* Fin Index*/
+
+/* Inicio Dinosaurios*/
+.dino {
+    display: flex;
+    color: #091540;
+    background-color: #cdd2c0;
+    padding: 2rem 5rem;
+    gap: 3rem;
+}
+.dino-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.dino-item {
+    font-size: 1.5rem;
+    border: 3px solid #495f41;
+    padding: 1rem;
+}
+.dino-head {
+    display: flex;
+    gap: 1rem;
+    max-width: 800px;
+}
+.dino-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.name-dino {
+    font-size: 2.4rem;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.dino-stats {
+    list-style-type: square;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: 500;
+    list-style-position: inside;
+}
+.dino-img {
+    object-fit: fill;
+    width: 100%;
+
+}
+.dino-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.dino-title {
+    font-size: 2rem;
+}
+/* Fin Dinosaurios*/
+
+/*inicio Suscripcion*/
+.subs {
+    background-color: #cdd2c0;
+    margin-inline: 5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 10rem;
+}
+.sub-box {
+    border: 3px solid #495f41;
+    border-radius: 10%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.suscripcion {
+    background-color: #cdd2c0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 500px;
+}
+.unete {
+    max-width: 413.999px;
+}
+/*Fin Suscripcion*/
+
+/*Inicio Footer*/
+.footer {
+    text-align: center;
+    position: static;
+    background-color: #495f41;
+    bottom: 0;
+    font-family: 'Skranji', cursive;
+    color: #cdd2c0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+} 
+.footer-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+/*Fin Footer*/

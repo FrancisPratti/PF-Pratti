@@ -12,60 +12,41 @@ body {
     background-image: url(../img/fondo2.jpg);
     font-family: 'Raleway', sans-serif;
 }
+main {
+    margin-inline: 7rem;
+}
 /* Inicio Header */
 header {
-    background-color: #495f41;
-    font-family: 'Skranji', cursive;
-    text-align: center;
-    padding-top: 10px;
-    padding-inline: 10px;
     position: sticky;
     top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 100;
-}
-.logo-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .logo {
-    width: 100px;
-}
-.name-pag {
-    color: #cdd2c0;
-    font-size: 2.5rem;
-    padding-left: 0px;
-    text-align: left;
-}
-.menu {
-    display: inline;
-    text-decoration: none;
-    color: #cdd2c0;
-    font-size: 1.5rem;
-    background-color: #495f41;
-}
-.navbar {
-    background-color: #495f41;
-    align-items: center;
-    --bs-navbar-color: #cdd2c0;
-    padding: 0px;
-    margin: 0px;
-}
-.navbar-toggler {
-    background-color:#cdd2c0;
-}
-.bg-body-tertiary {
-    --bs-bg-opacity: 0;
-}
-main {
-    margin-inline: 10rem;
-    display: flex;
-    flex-direction: column;
-    background-color: #cdd2c0;
-}
+    width: 60px;
+    height: auto;
+  }
+  .name-pag {
+      color: #cdd2c0;
+      font-size: 2rem;
+  }
+  .navbar {
+      background-color: #495f41;
+      font-family: Skranji;
+  
+  }
+  .nav-link {
+      font-size: 1.3rem;
+      color: #cdd2c0;
+  }
+  a:hover {
+      text-decoration: underline;
+      color: #181F1C;
+  }
+  .navbar-nav {
+      gap: 1.5rem;
+  }
+  .container-fluid{
+      align-items: center;
+  }
 /* Fin Header */
 
 /* Inicio Index */
@@ -234,3 +215,8 @@ main {
     gap: 1.5rem;
 }
 /*Fin Footer*/
+@media screen and (max-widht: 550px ){
+    .name-pag {
+        font-size: 1rem;
+    }
+}

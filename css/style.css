@@ -14,17 +14,19 @@ body {
 }
 main {
     margin-inline: 7rem;
+    background-color: #cdd2c0;
 }
 /* Inicio Header */
 header {
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 .logo {
     width: 60px;
     height: auto;
   }
-  .name-pag {
+.navbar-brand {
       color: #cdd2c0;
       font-size: 2rem;
   }
@@ -84,15 +86,15 @@ header {
     flex-direction: column;
 }
 .noticias-extra {
-    display: flex;
+    display: grid;
     gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .otra-noticia {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border: 5px solid #495f41;
     border-radius: 10%;
     padding: 0.8rem;
 }
@@ -165,6 +167,37 @@ header {
 }
 /* Fin Dinosaurios*/
 
+/*inicio especies*/
+.animal {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "nombre nombre otro"
+    "acordeon acordeon otro";
+}
+.resumen {
+    grid-area: nombre;
+}
+.nombre-animal {
+    grid-area: animal;
+    font-size: 4rem;
+}
+.intro-animal {
+    grid-area: intro;
+}
+.animal-img {
+    grid-area: img;
+}
+.animal-img2 {
+    grid-area: img2;
+    max-width: min-content;
+}
+.acordeon {
+    grid-area: acordeon;
+}
+/*fin especies*/
+
 /*inicio Suscripcion*/
 .subs {
     background-color: #cdd2c0;
@@ -173,7 +206,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 2rem 10rem;
+    padding: 2rem;
 }
 .sub-box {
     border: 3px solid #495f41;
@@ -193,6 +226,9 @@ header {
 }
 .unete {
     max-width: 413.999px;
+}
+.input {
+    width: fit-content;
 }
 /*Fin Suscripcion*/
 
@@ -215,8 +251,64 @@ header {
     gap: 1.5rem;
 }
 /*Fin Footer*/
-@media screen and (max-widht: 550px ){
-    .name-pag {
+@media (max-width: 1200px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    .nav-link {
         font-size: 1rem;
+    }
+}
+@media (max-width: 992px){
+   
+    main {
+        margin-inline: 2rem;
+    }
+    /*Inicio header*/
+    header {
+        position: static;
+        padding-inline: 0;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    .container nav {
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
+    .navbar-nav {
+        gap: 0;
+        padding: 0;
+        margin: 0;
+        margin-left: 1rem;
+    }
+    .nav-link{
+        font-size: 1rem;
+        justify-content: center;
+    }
+    .menu {
+        justify-content: space-between;
+    }
+    /*Fin header*/
+
+    .titulo {
+        font-size: 2.5rem;
+    }
+    .subtitulo {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .cuerpo-noticia {
+        font-size: 1rem;
+    }
+    .img-noticia {
+        margin-inline: 0rem;
+    }
+    .noticias-extra {
+        grid-template-columns: 1fr;
     }
 }

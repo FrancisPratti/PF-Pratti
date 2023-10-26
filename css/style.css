@@ -20,6 +20,10 @@ ul {
     padding-left: 0;
     margin-bottom: 0;
 }
+a:hover {
+      text-decoration: underline;
+      color: #181F1C;
+  }
 /* Inicio Header */
 header {
     position: sticky;
@@ -29,35 +33,20 @@ header {
 .logo {
     width: 60px;
     height: auto;
-  }
-.navbar-brand {
-      color: #cdd2c0;
-      font-size: 2rem;
-  }
-.navbar {
+}
+.navlogo img{
+    height: 50px;
+}
+.navbar{
     background-color: #495f41;
     font-family: Skranji;
-
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  .nav-link {
-      font-size: 1.2rem;
-      color: #cdd2c0;
-      padding-right: 0;
-  }
-  a:hover {
-      text-decoration: underline;
-      color: #181F1C;
-  }
-  .navbar-nav {
-      gap: 1rem;
-  }
-  .container-fluid{
-      align-items: center;
-  }
+}
+.navbar-brand{
+    color: #cdd2c0;
+}
+.nav-link{
+    color: #cdd2c0;
+}
 /* Fin Header */
 
 /* Inicio Index */
@@ -84,9 +73,10 @@ header {
     text-decoration: underline;
 }
 .img-noticia {
-    max-width: 900px;
+    max-width: fit-content;
     margin-bottom: 2rem;
-    margin-inline: 9rem;
+    justify-self: center;
+
 }
 .cuerpo-noticia {
     font-size: 1.2rem;
@@ -107,7 +97,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .otro-titulo {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     color: #181F1C;
 }
 /* Fin Index*/
@@ -228,14 +218,27 @@ header {
 /*fin especies*/
 
 /*Inicio museos*/
-.card {
+.carta {
     padding: 1rem;
-    -ms-grid-column-align: stretch;
+    height: 100%;
+    background-color: white;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.museo {
+    height: 100%;
 }
 .cartas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    margin-bottom: 1rem;
+}
+.titulo-museo {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-block: 0.5rem;
 }
 /*Fin museos*/
 
@@ -288,12 +291,15 @@ header {
     font-size: 1.2rem;
     font-weight: 500;
     display: flex;
-    padding: 1.5rem;
+    padding: 1rem;
     justify-content: space-between;
 } 
 .footer-icons {
     display: flex;
     gap: 1.5rem;
+}
+.copyright {
+    margin-bottom: 0;
 }
 /*Fin Footer*/
 @media (max-width: 1200px) {
@@ -408,12 +414,22 @@ header {
         font-size: 1rem;
     }
     /*Fin index*/
+    /*Inicio museos*/
+    .cartas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .museos {
         margin-inline: 2rem;
     }
     .card {
         max-width: fit fit-content;
     }
+    .titulo-museo {
+        font-size: 1.7rem;
+    }
+    /*Fin museos*/
     .container {
         max-width: fit-content;
     }
@@ -444,18 +460,89 @@ header {
         flex-direction: column;
     }
     .otro-titulo {
-        font-size: 16px;
+        font-size: 0.8rem;
     }
     /*Fin index*/
-
+    /*Inicio dinos*/
+    .dino {
+        padding: 1.5rem 1.5rem;
+        gap: 0.5rem;
+    }
+    .name-dino {
+        font-size: 1.8rem;
+    }
+    .dino-stats-item {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .dino-item {
+        font-size: 0.8rem;
+    }
+    .dino-title {
+        font-size: 1.2rem;
+    }
+    .dino-parr {
+        font-size: 0.9rem;
+    }
+    /*Fin dinos*/
+    /*Inicio museos*/
+    .titulo-museo {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+    /*Fin museos*/
     .animales {
         padding-inline: 0;
     }
 }
 
 @media (max-width: 576px) {
+    /*Inicio index*/
+    .mas-noticias{
+        padding: 1rem 0.8rem;
+    }
     .noticias-extra {
         display: flex;
         flex-direction: column;
+    }
+    .otra-noticia {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+        align-items: center;
+        max-height: 300px;  
+    }
+    .card-body {
+        padding: 0.5rem;
+    }
+    .otro-titulo {
+        font-size: 1rem;
+    }
+    /*Fin index*/
+    /*Inicio dinos*/
+    .dino {
+        padding: 1rem 1rem;
+    }
+    .name-dino {
+        font-size: 1.4rem;
+    }
+    .dino-item {
+        font-size: 0.8rem;
+    }
+    /*Fin dinos*/
+    /*Inicio museo*/
+    .titulo-museo {
+        font-size: 1.2rem;
+    }
+    .card-text {
+        font-size: 0.8rem;
+    }
+    /*Fin museos*/
+    .footer {
+        padding: 0.5rem;
+        align-items: center;
+    }
+    .copyright {
+        font-size: 1rem;
+        margin-bottom: 0;
     }
 }

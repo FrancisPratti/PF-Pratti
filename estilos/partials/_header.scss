@@ -1,0 +1,49 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: $backgroundgreen;
+
+    @include mediaquery(992px) {
+        position: static;
+        padding-inline: 0;
+    }
+
+    .navbar{
+        .navlogo {
+            display: flex;
+            align-items: center;
+
+            img{
+                height: 60px;
+            }
+
+            .navbar-brand{
+                color: #cdd2c0;
+                font-family: $headfont;
+                font-size: 1.8rem;
+
+
+                @include mediaquery(992px) {
+                    margin-right: 0;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    
+    .nav-link{
+    color: $colorWhite;
+    font-family: $headfont;
+    font-size: 1.2rem;
+
+    @include mediaquery(1200px) {
+        font-size: 1.2rem;
+    }
+    @include mediaquery(992px) {
+        font-size: 1rem;;
+    }
+}
+}
+
+   

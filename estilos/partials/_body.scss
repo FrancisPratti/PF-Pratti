@@ -1,0 +1,29 @@
+body {
+    background-image: url(../../img/fondo2.jpg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    main {
+        margin-inline: 7rem;
+        background-color: $colorWhite;
+        flex-grow: 1;
+
+        @include mediaquery (1200px) {
+            margin-inline: 2rem;
+        }
+
+        @include mediaquery (768px) {
+            margin-inline: 0;
+        }
+    }
+    a {
+        color: $colorWhite;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            color: #181F1C;
+        }
+    }
+}

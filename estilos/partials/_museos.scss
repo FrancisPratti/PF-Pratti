@@ -1,0 +1,36 @@
+.museos {
+    padding: 1rem;
+
+    .cartas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    
+        .museo {
+            height: 100%;
+    
+            .carta {
+                padding: 1rem;
+                height: 100%;
+                background-color: white;
+                margin: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                border-radius: 2%;
+                border: 3px solid $backgroundgreen;
+    
+                .titulo-museo {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    margin-block: 0.5rem;
+                }
+                .boton-museo {
+                    background-color: #2f603e;
+                    border: 0px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@media (max-width: 1200px) {
+    /*Inicio dinosaurios*/
+    .dino-head {
+        flex-direction: column;
+    }
+    .dino-img {
+        margin-bottom: 1rem;
+    }
+    .dino-item {
+        font-size: 1rem;
+    }
+    /*Fin dinosaurios*/
+    /*Inicio otras especies*/
+    .animal-img {
+        object-fit: scale-down;
+    }
+    /*Fin otras especies*/
+}
+@media (max-width: 992px){
+    /*Inicio museos*/
+    .cartas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .museos {
+        margin-inline: 2rem;
+    }
+    .card {
+        max-width: fit fit-content;
+    }
+    .titulo-museo {
+        font-size: 1.7rem;
+    }
+    /*Fin museos*/
+    .container {
+        max-width: fit-content;
+    }
+    .nombre-animal {
+        font-size: 2.3rem;
+    }
+}
+@media (max-width: 768px) {
+    /*Inicio dinos*/
+    .dino {
+        padding: 1.5rem 1.5rem;
+        gap: 0.5rem;
+    }
+    .name-dino {
+        font-size: 1.8rem;
+    }
+    .dino-stats-item {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .dino-item {
+        font-size: 0.8rem;
+    }
+    .dino-title {
+        font-size: 1.2rem;
+    }
+    .dino-parr {
+        font-size: 0.9rem;
+    }
+    /*Fin dinos*/
+    /*Inicio museos*/
+    .titulo-museo {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+    /*Fin museos*/
+
+}
+@media (max-width: 576px) {
+    /*Inicio dinos*/
+    .dino {
+        padding: 1rem 1rem;
+    }
+    .name-dino {
+        font-size: 1.4rem;
+    }
+    .dino-item {
+        font-size: 0.8rem;
+    }
+    /*Fin dinos*/
+    /*Inicio museo*/
+    .titulo-museo {
+        font-size: 1.2rem;
+    }
+    .card-text {
+        font-size: 0.8rem;
+    }
+    /*Fin museos*/
+    .footer {
+        padding: 0.5rem;
+        align-items: center;
+    }
+    .copyright {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+}

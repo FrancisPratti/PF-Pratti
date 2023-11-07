@@ -1,0 +1,118 @@
+.noticia {
+    display: flex;
+    flex-direction: column;
+    color: #091540;
+    background-color: #cdd2c0;
+    padding: 2rem 5rem;
+
+    @include mediaquery (992px) {
+        padding: 1.5rem 2.5rem;
+    }
+    @include mediaquery (768px) {
+            padding: 0.8rem 1rem;
+    }
+
+    .titulo {
+        font-size: 3.5rem;
+        font-weight: 700;
+
+        @include mediaquery (1200px) {
+            font-size: 2.5rem;
+        }
+        @include mediaquery (768px) {
+            font-size: 1.5rem;
+        }
+    }
+    .bajada {
+        font-size: 1.6rem;
+        margin-block: 1rem;
+        font-weight: 500;
+
+        @include mediaquery (768px) {
+            font-size: 1.2rem;
+        }
+    }
+    .subtitulo{
+        font-size: 1.8rem;
+        margin-block: 1rem;
+        font-weight: 500;
+        text-decoration: underline;
+
+        @include mediaquery (1200px) {
+            font-size: 1.5rem;
+        }
+        @include mediaquery (768px) {
+            font-size: 1.2rem;
+        }
+    }
+    .img-noticia {
+        max-width: 100%;
+        max-height: auto;
+        object-fit:fill;
+        margin-bottom: 2rem;
+        justify-self: center;
+    
+    }
+    .cuerpo-noticia {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+
+        @include mediaquery(1200px) {
+            font-size: 1rem;
+        }
+    }
+}
+.mas-noticias {
+    display: flex;
+    background-color: #cdd2c0;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin-inline: auto;
+    gap: 1rem;
+    flex-direction: column;
+    
+    @include mediaquery (576px) {
+        padding: 1rem 0.8rem;
+    }
+
+    .noticias-extra {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        @include mediaquery (992px) {
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        @include mediaquery (576px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .otra-noticia {
+            @include mediaquery (576px) {
+                display: grid;
+                grid-template-columns: 3fr 4fr;
+                align-items: center;
+                max-height: 300px; 
+                padding: 0.5rem;
+            }
+        }
+
+        .otro-titulo {
+            font-size: 0.9rem;
+            color: #181F1C;
+
+            @include mediaquery (1200px) {
+                font-size: 1rem;
+            }
+            @include mediaquery (768px) {
+                font-size: 0.8rem;
+            }
+            @include mediaquery (576px) {
+                font-size: 1rem;
+            }
+        }
+    }
+}

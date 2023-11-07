@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fosilpedia argentina</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./estilos/estilo.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
@@ -15,7 +14,9 @@
             <div class="container-fluid">
                 <div class="navlogo">
                     <img src="./img/logo1-removebg-preview.png" alt="">
-                    <a class="navbar-brand" href="#">Fosilpedia Argentina</a>
+                    <h1>
+                        <a class="navbar-brand" href="#">Fosilpedia Argentina</a>
+                    </h1>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -46,60 +47,38 @@
         </nav>
     </header>
     <main>
-       <section>
-            <div class="noticia">
-                <h2 class="titulo">Hallan los fósiles de uno de los dinosaurios más grandes</h2>
-                <h3 class="bajada">Los huesos del animal prehistórico de cuello largo eran tan grandes y pesados que la camioneta que los transportaba hacia Buenos Aires se volcó. El dinosaurio habría pesado unas 50 toneladas y medido hasta 30 metros.</h3>
-                <img class="img-noticia" src="./img/femur1.jpg" alt="Femur al lado de una pala de menor tamaño">
-                <p class="cuerpo-noticia">Los restos fósiles hallados por un grupo de paleontólogos en la Patagonia argentina podrían pertenecer a uno de los dinosaurios más grandes jamás descubiertos, según se detalla en un estudio publicado por la revista Cretaceous Research.</p>
-                <p class="cuerpo-noticia">Los huesos del gigantesco herbívoro de cuello largo fueron encontrados en la Reserva Natural Pueblo Blanco en 2018, y son tan grandes y pesados que hicieron volcar la camioneta que los transportaba hacia un laboratorio de Buenos Aires, aunque los restos quedaron intactos.</p>
-                <p class="cuerpo-noticia">"Por suerte, nadie resultó herido de gravedad y los huesos de este dinosaurio, que volaron por los aires, eran tan duros que no sufrieron daños. Al contrario, rompieron el asfalto de la carretera", contó a Live Science el autor principal, el paleontólogo Fernando Novas.</p>
-                <h3 class="subtitulo">El dinosaurio más grande la zona</h3>
-                <p class="cuerpo-noticia">Con hasta unas 50 toneladas y unos 30 metros de longitud, el bautizado Chucarosaurus diripienda es el dinosaurio más grande descubierto hasta ahora en la montañosa provincia de Río Negro.</p>
-                <p class="cuerpo-noticia">Los científicos estiman que este animal prehistórico con un cuello extremadamente largo habría vivido en hace unos 90 millones de años, en el Cretácico Superior, junto a otros depredadores, peces y tortugas marinas.</p>
-                <p class="cuerpo-noticia">"Su largo cuello le permitía alimentarse de las hojas de las copas de los árboles, y su larga cola habría sido un arma eficaz contra los ataques de los grandes dinosaurios carnívoros que acechaban en su entorno", agregó Novas.</p>
-                <img class="img-noticia" src="./img/femur2.jpg" alt="Paleontologo trabajando con el femur">
-                <p class="cuerpo-noticia">Si bien se encontraron siete huesos diferentes del saurópodo, se destaca una pieza del fémur que mide 1,90 metros y que se encontró dividida en tres partes, cada una de las cuales pesaba más de 100 kilogramos y que requería al menos tres personas para levantarla, según los científicos.</p>
-                <p class="cuerpo-noticia">El paleontólogo y coautor de la investigación Matías Motta señaló que, aunque el C. diripienda rivalizaba con otros gigantes patagónicos en tamaño y peso, las características de sus caderas, extremidades anteriores y posteriores sugerían que era un dinosaurio más esbelto y grácil.</p>
-                <h3 class="subtitulo">Argentina, un paraíso para paleontólogos</h3>
-                <p class="cuerpo-noticia">La Patagonia fue el hogar de los dinosaurios herbívoros más grandes del mundo, como el colosal Patagotitan mayorum, el ejemplar más grande jamás descubierto, aunque los científicos aún no saben por qué las especies de allí crecieron tan rápido y, en algunos casos, nunca dejaron de crecer durante toda su vida.</p>
-                <p class="cuerpo-noticia">Hasta ahora, se han descubierto unas 140 especies de dinosaurios en Argentina, que figura entre los tres primeros países del mundo en investigación y descubrimientos, junto con China y Estados Unidos</p>
+        <section class="noticias">
+            <div><h2>Mira las ultimas noticias sobre fosiles en el pais</h2></div>
+            <div class="cards-noticias">
+                <div class="noticia1">
+                    <img src="./img/femur1.jpg" alt="" class="noticias-img">
+                    <h2><a href="./pages/noticias/noticia-femur.html">Hallan los fósiles de uno de los dinosaurios más grandes</a></h2>
+                    <p>Los huesos del animal prehistórico de cuello largo eran tan grandes y pesados que la camioneta que los transportaba hacia Buenos Aires se volcó. El dinosaurio habría pesado unas 50 toneladas y medido hasta 30 metros.</p>
+                </div>
+                <div class="noticia2">
+                    <img src="./img/noticia-titan.jpg" alt="">
+                    <h2><a href="./pages/noticias/noticia-titan.html">El colosal dinosaurio de Argentina que llega al Museo de Historia Natural de Londres</a></h2>
+                    <p>Un coloso ha aterrizado en Londres directamente desde Argentina. El esqueleto de lo que fue uno de los animales más grandes que jamás haya caminado sobre la Tierra ahora está en exhibición en el Museo de Historia Natural británico.</p>
+                </div>
+                <div class="noticia3">
+                    <img src="./img/noticia-gliptodonte.jpg" alt="">
+                    <h2><a href="./pages/noticias/noticia-gliptodonte.html">Rescatan huesos de un gliptodonte encontrado en el pozo ciego de una obra en construcción en Santa Fe.</a></h2>
+                    <p>Los huesos del animal fueron encontrados a cuatro metros y medio de profundidad en un predio del municipio de Las Petacas, departamento de San Martín. Todo el pueblo colaborá en su extracción.</p>
+                </div>
+                <div class="noticia4">
+                    <img src="./img/pelicano.jpg" alt="">
+                    <h2><a href="./pages/noticias/noticia-pelicano.html">Sorprendente: científicos argentinos encuentran restos fósiles del pelícano más austral del mundo</a></h2>
+                    <p>Se encontraban ocultos en los sedimentos marinos de la Formación Paraná, en las inmediaciones de la ciudad de Victoria, Entre Ríos. ¿Qué encontraron y de qué antigüedad datan?</p>
+                </div>
+                <div class="noticia5">
+                    <img src="./img/perezoso-web.jpg" alt="">
+                    <h2><a href="./pages/noticias/noticia-perezoso.html">Hallan en Argentina los primeros fósiles de un perezoso acuático en un ambiente continental</a></h2>
+                    <p>Especialistas del CONICET publicaron los resultados de los estudios a los restos de un ejemplar de Thalassocnus descubierto en la provincia de Jujuy.</p>
+                </div>
             </div>
-       </section>
-       <section class="mas-noticias">
-            <div>
-                <h2>Tambien te puede interesar:</h2>
-            </div>  
-            <div class="noticias-extra"> 
-                <div class="card otra-noticia" style="width: fit-content;">
-                    <img src="./img/noticia titan.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text "><a href="./pages/noticias/noticia-titan.html" class="otro-titulo">El colosal dinosaurio de Argentina que llega al Museo de Historia Natural de Londres</a></p>
-                    </div>
-                  </div>   
-                  <div class="card otra-noticia" style="width: fit-content;">
-                    <img src="./img/noticia gliptodonte.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text"><a href="./pages/noticias/noticia-gliptodonte.html" class="otro-titulo">Rescatan huesos de un gliptodonte encontrado en el pozo ciego de una obra en construcción en Santa Fe.</a></p>
-                    </div>
-                  </div> 
-                  <div class="card otra-noticia" style="width: fit-content;">
-                    <img src="./img/perezoso-web.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text "><a href="./pages/noticias/noticia-perezoso.html" class="otro-titulo">Hallan en Argentina los primeros fósiles de un perezoso acuático en un ambiente continental</a></p>
-                    </div>
-                  </div>
-                  <div class="card otra-noticia" style="width: fit-content;">
-                    <img src="./img/pelicano.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text "><a href="./pages/noticias/noticia-pelicano.html" class="otro-titulo">Sorprendente: científicos argentinos encuentran restos fósiles del pelícano más austral del mundo</a></p>
-                    </div>
-                  </div>
-                 
-            </div> 
-       </section>
+        </section>
     </main>
-    <footer class="footer">
+    <footer>
         <div class="footer-icons">
             <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
             <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>

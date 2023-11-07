@@ -1,0 +1,112 @@
+.noticias {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 3rem;
+    
+    h2 {
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+}
+.cards-noticias {
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "noticia1 noticia1 noticia2"
+    "noticia3 noticia4 noticia5";
+
+    gap: 1rem;
+
+    .noticia1 {
+        padding: 1rem;
+        grid-area: noticia1;
+        background-color: white;
+        border-radius: 2%;
+        h2 {
+            font-size: 1.5rem;
+        }
+        a {
+            color: #181F1C;
+        }
+        img {
+            max-width: 100%;
+            max-height: auto;
+            margin-bottom: 1rem;
+        }
+    }
+    .noticia2 {
+        grid-area: noticia2;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 2%;
+        
+        h2 {
+            font-size: 1.4rem;
+        }
+        a {
+            color: #181F1C;
+        }
+        img {
+            max-width: 100%;
+            max-height: auto;
+            margin-bottom: 1rem;
+        }
+    }
+    .noticia3 {
+        grid-area: noticia3;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 2%;
+        
+        h2 {
+            font-size: 1.4rem;
+        }
+        a {
+            color: #181F1C;
+        }
+        img {
+            max-width: 100%;
+            max-height: auto;
+            margin-bottom: 1rem;
+        }
+    }
+    .noticia4 {
+        grid-area: noticia4;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 2%;
+        
+        h2 {
+            font-size: 1.4rem;
+        }
+        a {
+            color: #181F1C;
+        }
+        img {
+            max-width: 100%;
+            max-height: auto;
+            margin-bottom: 1rem;
+        }
+    }
+    .noticia5 {
+        grid-area: noticia5;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 2%;
+
+        h2 {
+            font-size: 1.4rem;
+        }
+        a {
+            color: #181F1C;
+        }
+        img {
+            max-width: 100%;
+            max-height: auto;
+            margin-bottom: 1rem;
+        }
+    }
+}

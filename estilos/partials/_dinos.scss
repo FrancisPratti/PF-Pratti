@@ -1,0 +1,75 @@
+.dino {
+    display: flex;
+    color: #091540;
+    background-color: #cdd2c0;
+    padding: 2rem 5rem;
+    gap: 3rem;
+
+    .dino-head {
+        display: flex;
+        gap: 1rem;
+        max-width: 800px;
+        margin-bottom: 1rem;
+
+        .dino-main {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .name-dino {
+                font-size: 2.4rem;
+                text-decoration: underline;
+                font-weight: 700;
+            }
+
+            .dino-stats {
+                list-style-type: square;
+                font-size: 1.2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                font-weight: 500;
+                list-style-position: inside;
+            }
+        }
+
+        .dino-img {
+            object-fit: fill;
+            width: 100%;
+        
+        }
+    }
+
+    .dino-body {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .dino-title {
+            font-size: 2rem;
+        }
+        
+        .dino-img {
+            object-fit: fill;
+            width: 100%;
+        
+        }
+    }
+
+    .dino-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        position:sticky;
+        top: 95px;
+        background-color: #2f603e;
+        border-radius: 5%;
+        padding-left: 0;
+        padding: 0.2rem;
+
+        .dino-item {
+            font-size: 1.3rem;
+            padding: 0.5rem;
+        }
+    }
+}

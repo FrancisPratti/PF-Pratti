@@ -1,0 +1,22 @@
+footer {
+    text-align: center;
+    position: static;
+    background-color: #495f41;
+    bottom: 0;
+    color: $colorWhite;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    gap: 2rem;
+
+    .footer-icons {
+        display: flex;
+        gap: 1.5rem;
+    }
+    .copyright {
+        margin-bottom: 0;
+        font-family: $headfont;
+    }
+} 

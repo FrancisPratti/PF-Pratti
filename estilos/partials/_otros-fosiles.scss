@@ -2,102 +2,128 @@
     padding-left: 1.5rem;
 
     @include mediaquery (768px) {
-
+        padding-left: 0;
     }
-    .row {
+    .container {
+        max-width: fit-content;
 
-        @include mediaquery (768px) {
-        }
-        .animal {
-            display: flex;
-            flex-direction: column;
-            margin-top: 1rem;
-        
-            .resumen {
-        
-                .nombre-animal {
-                    font-size: 4rem;
-                    text-decoration: underline;
-        
-                    @include mediaquery (992px) {
-                        font-size: 2.3rem;
-                    }
-                }
-                .intro-animal {
+        .row {
 
-                    @include mediaquery (768px) {
-                        font-size: 0.8rem;
-                    }
-                }
-                .animal-img {
-                    max-width: 100%;
-                    max-height: auto;
-                    margin-bottom: 1rem;
-                    margin-right: 1rem;
-        
-                    @include mediaquery (1200px) {
-                        object-fit: scale-down;
-                    }
-                       }
+            @include mediaquery (768px) {
             }
-        
-            .acordeon {
-        
-                .accordion-item {
-                    max-height:none;
-        
-                    .dimensiones {
-                        display: grid;
-                        grid-template-columns: 1fr 2fr;
-        
-                        @include mediaquery (1200px) {
-                            display: flex;
-                            flex-direction: column;
+            .animal {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1rem;
+            
+                .resumen {
+            
+                    .nombre-animal {
+                        font-size: 4rem;
+                        text-decoration: underline;
+            
+                        @include mediaquery (992px) {
+                            font-size: 2.3rem;
                         }
-        
-                        .animal-img {
-                            max-width: 100%;
-                            max-height: auto;
-                            margin-bottom: 1rem;
-                            margin-right: 1rem;
+                        @include mediaquery (768px) {
+                            font-size: 1.8rem;
+                        }
+                    }
+                    .intro-animal {
+    
+                        @include mediaquery (768px) {
+                            font-size: 0.9rem;
+                        }
+                    }
+                    .animal-img {
+                        max-width: 100%;
+                        max-height: auto;
+                        margin-bottom: 1rem;
+                        margin-right: 1rem;
+            
+                        @include mediaquery (1200px) {
+                            object-fit: scale-down;
+                        }
+                           }
+                }
+            
+                .acordeon {
+            
+                    .accordion-item {
+                        max-height:none;
+            
+                        .dimensiones {
+                            display: grid;
+                            grid-template-columns: 1fr 2fr;
+                            gap: 1rem;
             
                             @include mediaquery (1200px) {
-                                object-fit: scale-down;
+                                display: flex;
+                                flex-direction: column;
                             }
-                           }
-                   }
-                }
-            }
-        }
-        
-        .col-2 {
-            background-color: #4a4b47;
-            padding-top: 1.5rem;
-        
-            .links {
-                position: sticky;
-                top: 90px;
-        
-                .name-lista {
-                    color: #cdd2c0;
-        
-                    @include mediaquery (1200px) {
+            
+                            .animal-img {
+                                max-width: 100%;
+                                max-height: auto;
+                                margin-bottom: 1rem;
+                                margin-right: 1rem;
+                
+                                @include mediaquery (1200px) {
+                                    object-fit: scale-down;
+                                }
+                               }
+                       }
+                       h3 {
                         font-size: 1.2rem;
+                        text-decoration: underline;
+                        font-weight: 500;
+                       }
                     }
                 }
-        
-                .lista-animales {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 1rem;
-                    list-style: inside;
-                    padding-left: 0;
-                    list-style: none;
-
-                }
             }
-        
+            
+            .col-2 {
+                background-color: #4a4b47;
+                padding-top: 1.5rem;
+                
+                @include mediaquery (768px) {
+                    padding-inline: 0.2rem;
+                }
+                .links {
+                    position: sticky;
+                    top: 90px;
+                    
+                    @include mediaquery (992px) {
+                        top: 0;
+                    }
+                    .name-lista {
+                        color: $colorWhite;
+                        text-decoration: underline;
+            
+                        @include mediaquery (1200px) {
+                            font-size: 1.2rem;
+                        }
+                        @include mediaquery (768px) {
+                            font-size: 1rem;
+                        }
+                    }
+            
+                    .lista-animales {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        list-style: inside;
+                        padding-left: 0;
+                        list-style: none;
+                        
+                        @include mediaquery (768px) {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            
+            }
         }
     }
-   
+      
 }

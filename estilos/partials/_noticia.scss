@@ -91,6 +91,13 @@
         }
 
         .otra-noticia {
+            transition: 0.5s;
+        
+        &:hover {
+            transform: scale(1.1);
+            border: 3px solid $backgroundgreen;
+        }
+
             @include mediaquery (576px) {
                 display: grid;
                 grid-template-columns: 3fr 4fr;

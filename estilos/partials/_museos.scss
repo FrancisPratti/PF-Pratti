@@ -1,12 +1,23 @@
 .museos {
     padding: 1rem;
 
+    @include mediaquery (992px) {
+        margin-inline: 2rem;
+    }
+    @include mediaquery (576px) {
+        margin-inline: 0rem;
+    }
     .cartas {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
         margin-bottom: 1rem;
-    
+        
+        @include mediaquery (992px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
         .museo {
             height: 100%;
     
@@ -24,6 +35,22 @@
                     font-size: 2rem;
                     font-weight: 500;
                     margin-block: 0.5rem;
+
+                    @include mediaquery (992px) {
+                        font-size: 1.7rem;
+                    }
+                    @include mediaquery (768px) {
+                        font-size: 1.6rem;
+                        margin-bottom: 0.5rem;
+                    }
+                    @include mediaquery(576px) {
+                        font-size: 1.2rem;
+                    }
+                }
+                .card-text {
+                    @include mediaquery(576px) {
+                        font-size: 0.8rem;
+                    }
                 }
                 .boton-museo {
                     background-color: #2f603e;

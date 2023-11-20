@@ -60,17 +60,23 @@
         &:hover {
             transform: scale(1.1);
             border: 3px solid $backgroundgreen;
+            text-decoration: none;
         }
         h2 {
             font-size: 1.5rem;
+            color: #181F1C;
+            text-decoration: underline;
             @include mediaquery (1200px) {
                 font-size: 1rem;
             }
         }
         a {
             color: #181F1C;
+            ;
         }
         p {
+            color: #181F1C;
+            
             @include mediaquery (1200px) {
                 font-size: 0.8rem;
             }
@@ -91,9 +97,12 @@
         &:hover {
             transform: scale(1.1);
             border: 3px solid $backgroundgreen;
+            text-decoration: none;
         }
         h2 {
             font-size: 1.4rem;
+            color: #181F1C;
+            text-decoration: underline;
 
             @include mediaquery (1200px) {
                     font-size: 1rem;
@@ -104,6 +113,7 @@
             color: #181F1C;
         }
         p {
+            color: #181F1C;
             @include mediaquery (1200px) {
                 font-size: 0.8rem;
             }
@@ -124,9 +134,12 @@
         &:hover {
             transform: scale(1.1);
             border: 3px solid $backgroundgreen;
+            text-decoration: none;
         }
         h2 {
             font-size: 1.4rem;
+            color: #181F1C;
+            text-decoration: underline;
 
             @include mediaquery (1200px) {
                 font-size: 1rem;
@@ -136,6 +149,7 @@
             color: #181F1C;
         }
         p {
+            color: #181F1C;
             @include mediaquery (1200px) {
                 font-size: 0.8rem;
             }
@@ -156,9 +170,12 @@
         &:hover {
             transform: scale(1.1);
             border: 3px solid $backgroundgreen;
+            text-decoration: none;
         }
         h2 {
             font-size: 1.4rem;
+            color: #181F1C;
+            text-decoration: underline;
 
             @include mediaquery (1200px) {
                 font-size: 1rem;
@@ -168,6 +185,7 @@
             color: #181F1C;
         }
         p {
+            color: #181F1C;
             @include mediaquery (1200px) {
                 font-size: 0.8rem;
             }
@@ -188,9 +206,12 @@
         &:hover {
             transform: scale(1.1);
             border: 3px solid $backgroundgreen;
+            text-decoration: none;
         }
         h2 {
             font-size: 1.4rem;
+            color: #181F1C;
+            text-decoration: underline;
 
             @include mediaquery (1200px) {
                 font-size: 1rem;
@@ -200,6 +221,7 @@
             color: #181F1C;
         }
         p {
+            color: #181F1C;
             @include mediaquery (1200px) {
                 font-size: 0.8rem;
             }

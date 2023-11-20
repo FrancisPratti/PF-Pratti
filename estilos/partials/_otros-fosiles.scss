@@ -112,7 +112,6 @@
                     .lista-animales {
                         display: flex;
                         flex-direction: column;
-                        gap: 1rem;
                         list-style: inside;
                         padding-left: 0;
                         list-style: none;
@@ -123,6 +122,7 @@
                         
                         .item-ani {
                             padding-left: 0.5rem;
+                            padding-block: 0.5rem;
                         }
                         .active {
                             text-decoration: underline;

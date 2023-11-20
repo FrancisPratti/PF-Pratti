@@ -187,11 +187,13 @@
         background-color: #2f603e;
         border-radius: 5%;
         padding-left: 0;
-        padding: 0.2rem;
+        padding-block: 0.2rem;
+        gap: 0.5rem;
+        max-width: fit-content;
 
         .dino-item {
             font-size: 1.3rem;
-            padding: 0.5rem;
+            padding-inline: 0.7rem;
 
             @include mediaquery (1200px) {
                 font-size: 1rem;
@@ -202,6 +204,20 @@
             }
             @include mediaquery (576px) {
                 font-size: 0.8rem;
+            }
+        }
+        
+        .active {
+            text-decoration: underline;
+            color: #000001;
+            background-color: #1f8f40;
+            font-weight: 500;
+            padding-left: 0;
+
+            a {
+                color: #181F1C;
+                display: flex;
+                padding-left: 0;
             }
         }
     }

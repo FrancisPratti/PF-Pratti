@@ -85,6 +85,7 @@
             .col-2 {
                 background-color: #4a4b47;
                 padding-top: 1.5rem;
+                padding: 0;
                 
                 @include mediaquery (768px) {
                     padding-inline: 0.2rem;
@@ -118,6 +119,19 @@
                         
                         @include mediaquery (768px) {
                             font-size: 0.8rem;
+                        }
+                        
+                        .item-ani {
+                            padding-left: 0.5rem;
+                        }
+                        .active {
+                            text-decoration: underline;
+                            color: #181F1C;
+                            background-color: #7d8077;
+
+                            a{
+                                color: #181F1C;
+                            }
                         }
                     }
                 }

@@ -638,11 +638,14 @@ header .nav-link {
   background-color: #2f603e;
   border-radius: 5%;
   padding-left: 0;
-  padding: 0.2rem;
+  padding-block: 0.2rem;
+  gap: 0.5rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .dino .dino-list .dino-item {
   font-size: 1.3rem;
-  padding: 0.5rem;
+  padding-inline: 0.7rem;
 }
 @media (max-width: 1200px) {
   .dino .dino-list .dino-item {
@@ -658,6 +661,18 @@ header .nav-link {
   .dino .dino-list .dino-item {
     font-size: 0.8rem;
   }
+}
+.dino .dino-list .active {
+  text-decoration: underline;
+  color: #000001;
+  background-color: #1f8f40;
+  font-weight: 500;
+  padding-left: 0;
+}
+.dino .dino-list .active a {
+  color: #181F1C;
+  display: flex;
+  padding-left: 0;
 }
 
 .animales {
@@ -742,6 +757,7 @@ header .nav-link {
 .animales .container .row .col-2 {
   background-color: #4a4b47;
   padding-top: 1.5rem;
+  padding: 0;
 }
 @media (max-width: 768px) {
   .animales .container .row .col-2 {
@@ -783,6 +799,17 @@ header .nav-link {
   .animales .container .row .col-2 .links .lista-animales {
     font-size: 0.8rem;
   }
+}
+.animales .container .row .col-2 .links .lista-animales .item-ani {
+  padding-left: 0.5rem;
+}
+.animales .container .row .col-2 .links .lista-animales .active {
+  text-decoration: underline;
+  color: #181F1C;
+  background-color: #7d8077;
+}
+.animales .container .row .col-2 .links .lista-animales .active a {
+  color: #181F1C;
 }
 
 .museos {
